@@ -1,0 +1,123 @@
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.bakrunnur{
+    background: linear-gradient(red,black);
+}
+
+.kassi {
+    background: linear-gradient(darkred,black);
+}
+
+.kassi2 {
+    background: linear-gradient(darkred,red);
+}
+
+.litur {
+    color: orange !important;
+}
+
+
+.header { 
+    border: 1px solid black;
+    color:  black;
+    grid-area: header; 
+    padding:10px;
+    text-align: center;
+    font-style: italic;
+    font-size: 100px;
+  }
+
+.image-width{
+    
+    width: 96%;
+    padding: 10px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    'header header'
+    'left right'
+    'footer footer';
+    padding: 30px;
+}
+
+.grid-container-images{
+    display: grid;
+    grid-template-columns:
+    auto auto auto;
+    grid-area: footer;
+    width: 100%;
+}
+
+.right-column{
+    grid-area: right;
+}
+
+.left-column{
+    grid-area: left;
+}
+
+h3{
+    padding:10px;
+}
+
+@media only screen and (min-width: 0em) and (max-width: 37.5em){
+
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        'header'
+        'left'
+        'right'
+        'footer';
+        padding: 10px;
+    }
+    .grid-container-images{
+        display: grid;
+        grid-template-columns:
+        auto;
+        grid-area: footer;
+        
+    }
+
+    .header { 
+        border: 1px solid black;
+        color:  black;
+        grid-area: header; 
+        padding:10px;
+        text-align: center;
+        font-style: italic;
+        font-size: 25px;
+      }
+}
+
+@media only screen and (min-width: 37.5em) and (max-width: 48em){
+    
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        'header header'
+        'left right'
+        'footer footer';
+        padding: 30px;}
+
+        .grid-container-images{
+            display: grid;
+            grid-template-columns:
+            auto auto;
+            grid-area: footer;
+        }
+        .header { 
+            border: 1px solid black;
+            color:  black;
+            grid-area: header; 
+            padding:10px;
+            text-align: center;
+            font-style: italic;
+            font-size: 50px;
+          }
+}
