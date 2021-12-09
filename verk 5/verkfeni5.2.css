@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.a {
+    padding: 15px;
+}
+
+.body {
+    background: linear-gradient(blue,whitesmoke);
+    font-family: Lobster;
+}
+
+.litir {
+    background: linear-gradient(yellow,whitesmoke,red)
+}
+
+.midjun{
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.haegri{
+    text-align: right;
+}
+
+.kassi {
+    background: linear-gradient(red,orange);
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns:
+    auto auto;
+}
+
+.grid-container-footer{
+    display: grid;
+    grid-template-columns:
+    auto auto auto;
+}
+.hlekkir{
+    text-decoration: none;
+    color: white;
+    
+}
+
+button{
+    background-color: blue;
+    border: 0px;
+    height: 25px;
+}
+
+.EfstASidu{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 50px;
+
+}

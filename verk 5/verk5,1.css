@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.a {
+    padding: 15px;
+}
+
+.body {
+    background: linear-gradient(blue,whitesmoke);
+    font-family: Lobster;
+}
+
+.litir {
+    background: linear-gradient(yellow,whitesmoke)
+}
+
+.midjun{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.haegri{
+    text-align: right;
+}
+
+.kassi {
+    background: linear-gradient(red,orange);
+}
+
+.grid-container
+{
+    display: grid;
+    grid-template-columns:
+    auto auto;
+}
+
+.grid-container-footer{
+    display: grid;
+    grid-template-columns:
+    auto auto auto;
+}
+
+
+@media only screen and (min-width: 0em) and (max-width: 37.5em){
+    
+.grid-container
+{
+    display: grid;
+    grid-template-columns:
+    auto;
+}
+
+.grid-container-footer{
+    display: grid;
+    grid-template-columns:
+    auto;
+}
+}
+
+
+
+@media only screen and (min-width: 37.5em) and (max-width: 48em){
+    .grid-container
+    {
+        display: grid;
+        grid-template-columns:
+        auto auto;
+    }
+    
+    .grid-container-footer{
+        display: grid;
+        grid-template-columns:
+        auto auto;
+    }
+}
