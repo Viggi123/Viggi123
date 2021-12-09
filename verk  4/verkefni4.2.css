@@ -1,0 +1,179 @@
+.header { 
+    border: 1px solid black;
+    color: red;
+    grid-area: header; 
+    padding:10px;
+    text-align: center;
+    font-style: italic;
+  }
+  .menu { grid-area: menu; }
+  .main {
+    display: grid;
+    grid-template-areas: 
+    'main2 main2 right2 right1 main1 main1';
+    grid-area: main;
+    
+  }
+  .art1{
+    grid-area: main1;
+    border:1px solid;
+    padding:10px;
+    
+  }
+  .art1 > blockquote{
+    border: 1px solid;
+    padding:10px;
+    
+  }
+  .art2{
+    grid-area:main2;
+    border: 1px solid;
+    padding:10px;
+    
+  }
+  .as1{
+    grid-area: right1;
+    border: 1px solid;
+    padding:10px;
+    
+  }
+  .as2{
+    grid-area: right2;
+    border: 1px solid;
+    padding:10px;
+    
+  }
+  .item4 { grid-area: right; }
+  .footer { 
+    border: 1px solid;
+    grid-area: footer; 
+    padding:10px; 
+    text-align: center;
+   }
+   .footer > p{
+  display: inline-block;
+    margin-left: 20px;
+   }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header topnav'
+      'main   main   main   main'
+      'footer   footer footer footer';
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .topnav{
+    display: flex;
+   padding: 20px;
+   border:1px solid;
+   grid-area: topnav;
+   
+  }
+  .topmenu{
+   text-align: left; 
+  }
+  .topmenu > li{
+  display: flex;
+  }
+
+  @media only screen and (min-width: 0em) and (max-width: 37.5em){
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'header'
+          'main'
+          'topnav'
+          'footer';
+        padding: 10px;
+      }
+      .main {
+        display: grid;
+        grid-template-areas: 
+        'main2'
+        'main2' 
+        'right2' 
+        'right1' 
+        'main1' 
+        'main1';
+        grid-area: main;
+        
+      }
+  }
+
+  @media only screen and (min-width: 37.5em) and (max-width: 48em){
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          'topnav'
+          'header'
+          'main'
+          'footer';
+        padding: 10px;
+      }
+      .main {
+        display: grid;
+        grid-template-areas:
+        'main1 main1'
+        'right2 right1';
+        grid-area: main;
+        
+      }
+      .topmenu{
+        display: flex;
+        gap: 1em;
+        font-size: 18px;
+        width: 100%;
+        
+      }
+      .topmenu > li{
+
+        display: inline-block;
+        width: 25%;
+      }
+
+      .art2{ display: none;}
+  }
+
+  @media only screen and (min-width: 48em) and (max-width: 60em){
+      .grid-container {
+          display: grid;
+          grid-template-areas:
+          'topnav'
+          'header'
+          'main'
+          'footer';
+          padding: 10px;
+      }
+      .main {
+          display: grid;
+          grid-template-areas:
+          'main1 right1'
+          'main1 right2';
+          grid-area: main;
+      }
+
+      .topmenu{
+        display: flex;
+        gap: 1em;
+        font-size: 18px;
+        width: 100%;
+        
+      }
+       .topmenu > li{
+
+        display: inline-block;
+        width: 25%;
+      }
+      .art2{ display: none;}
+  }
