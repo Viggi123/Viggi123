@@ -1,0 +1,19 @@
+*{
+    border: 1px solid;
+}
+
+.haus{grid-area: h;}
+.vinstri{grid-area: v;}
+.aðal{grid-area: a;}
+.hægri{grid-area: hi;}
+.fótur{grid-area: f;}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "h h h"
+    "v a hi"
+    "f f f";
+}
+
+
