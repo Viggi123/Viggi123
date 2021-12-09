@@ -139,7 +139,7 @@ img{
 
     display: grid;
     grid-template-columns:
-    auto auto auto;
+    auto auto auto auto;
     margin: 50px;
 }
 
@@ -194,7 +194,7 @@ iframe{
 
         display: grid;
         grid-template-columns:
-        auto;
+        auto auto;
         margin: 20px;
     }
 
